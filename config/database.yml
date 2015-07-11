@@ -64,7 +64,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: babelTribes_test
+  database: babeltribes_test
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -87,6 +87,6 @@ test:
 #
 production:
   <<: *default
-  database: babelTribes_production
-  username: babelTribes
+  database: babeltribes_production
+  username: babeltribes
   password: <%= ENV['BABELTRIBES_DATABASE_PASSWORD'] %>
