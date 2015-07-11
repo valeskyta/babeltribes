@@ -23,7 +23,14 @@ default: &default
 
 development:
   <<: *default
-  database: babelTribes_development
+  adapter: postgresql
+  encoding: unicode
+  database: babeltribes_development
+  pool: 5
+  username: babel_user
+  password: 11babel
+
+
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
